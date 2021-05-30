@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+fieldset {
+    padding: 2rem;
+}
+
+body {
+    background: #010b36;
+    font-family: 'Verdana', sans-serif;
+}
+
+
+
+/* Header */
+header {
+    background-color: #010413;
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100;
+}
+
+/* Main */
+
+.container {
+    width: min(90vw, 1000px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Section */
+
+.atendimento {
+    margin-top: -8rem;
+    background: white;
+    padding: 2rem;
+}
+
+/* div exames */
+
+.esquedo {
+    position: relative;
+    float: left;
+}
+
+.direito {
+    position: relative;
+    float: right;
+}
+
+.input-exames {
+    box-shadow: none;
+    border: none;
+    border-bottom: rgb(1, 94, 14) solid 5px;
+    transition: all .5s;
+    width: 100%;
+    position: relative;
+}
+
+.data {
+    width: 100%;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.input-exames:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: orange;
+}
+
+.input-exames:focus + .select-label,
+.input-exames:not(:placeholder-shown) + .select-label {
+    transform:translateY(-2.5em) scale(.8);
+}
+
+.input-exames::placeholder {
+    color: rgb(231, 6, 141);
+} 
+
+/* Select */
+/*
+.select-group {
+    appearance: none;
+    border: none;
+    border-bottom: 5px solid #010b36;
+    margin-top: 24px;
+    width: 100%;
+    transition:all .3s ;
+}*/
+
+.select-label {
+    bottom: 5px;
+    left: 0;
+    color: rgb(240, 18, 2);
+    display: block;
+    transform: translateY(-24px);
+    transform-origin: 0 0;
+    transition: all .4s;
+}
+
+
+/*
+select:focus ~ label, select:valid ~ label {
+    transform: translateY(-24px);
+}
+*/
+/* Input */
+
+.input {
+    box-shadow: none;
+    border: none;
+    border-bottom: olive solid 5px;
+    transition: all .5s;
+    width: 100%;
+}
+
+.input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: orange;
+}
+
+.input:focus + .select-label,
+.input:not(:placeholder-shown) + .select-label {
+    transform:translateY(-2.5em) scale(.8);
+}
+
+.input::placeholder {
+    color: rgb(231, 6, 141);
+} 
+
+.form-group:focus-within {
+    transform:scale(1.05, 1.01) ;
+}

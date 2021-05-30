@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form name="fcad" method="GET" action="dados.php">
+        <header>
+            <h1 id="logo">Atendimento</h1>
+        </header>
+<main class="container">
+    <section class="atendimento">
+        <fieldset>
+            <legend>Tipo de Exame</legend>
+                <div class="form-group">
+                    <select class="input" name="cTipoExame" id="fTipoExame">
+                        <option value="Admissional">Admissional</option>
+                        <option value="Periodico">Periodico</option>
+                        <option value="Demissional">Demissional</option>
+                    </select>
+                    <label class="select-label" for="fTipoExame">Tipo de Exame</label>
+                </div>
+        </fieldset>    
+<br/>
+    <fieldset>
+        <legend>Informações da Empresa</legend>
+            <div class="form-group">    
+                <input  class="input" id="fCnpj" name="cCnpj" type="text" placeholder="CNPJ">
+                <label class="select-label" for="fCnpj">CNPJ</label>
+            </div>
+
+            <div class="form-group">    
+                <input class="input" id="fRazaoSocial" name="cRazaoSocial" type="text" placeholder="Razão Social">
+                <label class="select-label" for="fRazaoSocial">Razão Social</label>
+            </div>  
+
+            <div class="form-group">
+                <input class="input" id="fFantasia" name="cFantasia" type="text" placeholder="Nome Fantasia">
+                <label class="select-label" for="fFantasia">Nome Fantasia</label>
+            </div>
+    </fieldset>
+<br/>
+    <fieldset>
+        <legend>Informações do Funcionario</legend>
+    <div class="form-group">    
+        <input class="input" id="fFuncionario" name="cFuncionario" type="text" placeholder="Funcionario">
+        <label class="select-label" for="fFuncionario">Funcionario</label>
+    </div>  
+
+    <div class="form-group">
+        <input class="input" id="fCpf" type="text" name="cCpf" placeholder="CPF">
+        <label class="select-label" for="fCpf">CPF</label> 
+    </div>  
+
+    <div class="form-group">
+        <input class="input" id="fDataNascimento" type="date" name="cDataNascimento" placeholder="Data de Nacimento">
+        <label class="select-label" for="fDataNascimento">Data de Nascimento</label>  
+    </div>        
+
+    <div class="form-group">
+        <input class="input" id="fCargo" type="text" name="cCargo" placeholder="Cargo">
+        <label class="select-label" for="fCargo">Cargo do Funcionario</label> 
+    </div>  
+
+    <div class="form-group">
+        <input class="input" id="fSetor" type="text" name="cSetor" placeholder="Setor">
+        <label class="select-label" for="fSetor">Setor</label>    
+    </div>
+    </fieldset>
+<br/>
+    <fieldset>
+        <legend>Identificação dos Riscos</legend>
+    <div class="form-group">
+        <input class="input" name="cRiscoFisico" id="fRiscoFisico" type="text" placeholder="Risco Fisico">
+        <label class="select-label" for="fRiscoFisico">Risco Fisico</label>
+    </div>  
+
+    <div class="form-group">
+        <input class="input" name="cRiscoQuimico" id="fRiscoQuimico" type="text" placeholder="Risco Quimico">
+        <label class="select-label" for="fRiscoQuimico">Risco Quimico</label>
+    </div>  
+
+    <div class="form-group">
+        <input class="input" name="cRiscoBiologico" id="fRiscoBiologico" type="text" placeholder="Risco Biologico">
+        <label class="select-label" for="fRiscoBiologico">Risco Biologico</label>
+    </div>  
+
+    <div class="form-group">
+        <input class="input" name="cRiscoErgonomico" id="fRiscoErgonomico" type="text" placeholder="Risco Ergonoico">
+        <label class="select-label" for="fRiscoErgonomico">Risco Ergonomico</label>
+    </div>  
+
+    <div class="form-group">
+        <input class="input" name="cRiscoAcidente" id="fRiscoAcidente" type="text" placeholder="Risco Acidente">
+        <label class="select-label" for="fRiscoAcidente">Risco Acidente</label>
+    </div>
+    </fieldset>
+<br/>
+<fieldset class="containerExames">
+    <legend>Exames Solicitados</legend>
+    <div class="esquedo">
+        <div  class="form-group">
+            <input class="input-exames" name="cExame1" id="fExame1" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame1">Exame</label>
+            <input class="data" type="date" name="cData1">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame2" id="fExame2" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame2">Exame</label>
+            <input class="data" type="date" name="cData2">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame3" id="fExame3" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame3">Exame</label>
+            <input class="data" type="date" name="cData3">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame4" id="fExame4" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame4">Exame</label>
+            <input class="data" type="date" name="cData4">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame5" id="fExame5" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame5">Exame</label>
+            <input class="data" type="date" name="cData5">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame6" id="fExame6" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame6">Exame</label>
+            <input class="data" type="date" name="cData6">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame7" id="fExame7" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame7">Exame</label>
+            <input class="data" type="date" name="cData7">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame8" id="fExame8" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame8">Exame</label>
+            <input class="data" type="date" name="cData8">
+        </div>
+        <div class="form-group">
+            <input class="input-exames" name="cExame9" id="fExame9" type="text" list="exames" placeholder="Exame">
+            <label class="select-label" for="fExame9">Exame</label>
+            <input class="data" type="date" name="cData9">
+        </div>        
+    </div>
+
+    <div class="direito">
+
+    </div>    
+</fieldset>
+<br/>
+<fieldset>
+    <legend>Informações Complementares</legend>
+        
+    <div class="form-group">
+        <input class="input" name="cMedicocoordenador" id="fMedicoCoordenador" type="text" placeholder="Médico Coordenador">
+        <label class="select-label" for="fMedicoCoordenador">Médico Coordenador</label>
+    </div>  
+
+    <div class="form-group">
+        <input class="input" name="cObservacao" id="fObservacao" type="text" placeholder="Observação">
+        <label class="select-label" for="fObservacao">Observação</label>
+    </div>  
+
+    <div class="form-group">
+        <select class="input" name="cConvenio" id="fConvenio">
+            <option value="A Vista">A Vista</option>
+            <option value="Faturado">Faturado</option>
+            <option value="Deposito">Deposito</option>
+            <option value="Contrato">Contrato</option>
+            <option value=""></option>
+        </select>
+        <label class="select-label" for="fConvenio">Convenio</label>
+    </div> 
+</fieldset>
+<br/>
+
+    <div class="input">
+        <input type="submit" value="Salvar">
+    </div>
+
+    <div class="input">
+        <input type="reset" value="Limpar">
+    </div>
+</main>
+</section>
+    <datalist id="exames">
+        <option value="Exame Clinico"></option>
+        <option value="Acuidade Visual"></option>
+        <option value="Audiometria"></option>
+        <option value="Espirometria"></option>
+        <option value="Glicemia"></option>
+        <option value="Eletrocardiograma"></option>
+        <option value="Eletroencefalograma"></option>
+        <option value="Hemograma com plaquetas"></option>
+        <option value="Hemograma com reticulocitos"></option>
+        <option value="Coprocultura"></option>
+        <option value="Parasitologico de Fezes"></option>
+        <option value="VDRL"></option>
+        <option value="Reticulocitos"></option>
+        <option value="Avaliação Psicologica"></option>
+        <option value="Avaliação Psicossocial"></option>
+    </datalist>
+</form> 
+</body>
+</html>
