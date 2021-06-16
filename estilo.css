@@ -5,7 +5,7 @@
 }
 
 fieldset {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 body {
@@ -47,29 +47,47 @@ header {
 
 /* div exames */
 
-.esquedo {
+.esquerdo {
+    width: 50%;
     position: relative;
     float: left;
+    box-sizing: border-box;
 }
 
 .direito {
+    width: 50%;
     position: relative;
     float: right;
+    box-sizing: border-box;
 }
 
 .input-exames {
     box-shadow: none;
     border: none;
-    border-bottom: rgb(1, 94, 14) solid 5px;
+    border-bottom: #010b36 solid 5px;
     transition: all .5s;
-    width: 100%;
-    position: relative;
+    width: 60%;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.exame-group {
+
 }
 
 .data {
+    border: none;
+    width: 150px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+
+
+    /*
     width: 100%;
     margin-left: 200px;
     position: absolute;
+    */
 }
 
 .input-exames:focus {
@@ -84,7 +102,7 @@ header {
 }
 
 .input-exames::placeholder {
-    color: rgb(231, 6, 141);
+    color: transparent;
 } 
 
 /* Select */
@@ -101,11 +119,12 @@ header {
 .select-label {
     bottom: 5px;
     left: 0;
-    color: rgb(240, 18, 2);
+    color: #010b36;
     display: block;
     transform: translateY(-24px);
     transform-origin: 0 0;
-    transition: all .4s;
+    transition: all .5s;
+    box-sizing: border-box;
 }
 
 
@@ -119,9 +138,9 @@ select:focus ~ label, select:valid ~ label {
 .input {
     box-shadow: none;
     border: none;
-    border-bottom: olive solid 5px;
+    border-bottom: #010b36 solid 5px;
     transition: all .5s;
-    width: 100%;
+    width: 40%;
 }
 
 .input:focus {
@@ -136,9 +155,26 @@ select:focus ~ label, select:valid ~ label {
 }
 
 .input::placeholder {
-    color: rgb(231, 6, 141);
+    color: transparent;
 } 
 
 .form-group:focus-within {
-    transform:scale(1.05, 1.01) ;
+    transform:scale(1.01, 1.01) ;
+}
+
+.salvar {
+    width: 50%;
+    height: 3rem;
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.limpar {
+    width: 50%;
+    height: 2rem;
+    background-color: yellowgreen;
+}
+
+#campoBlock  {
+    display: inline-block;
 }
